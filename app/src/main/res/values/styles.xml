@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Toolbar"></style>
+    <style name="Toolbartheme">
+        <item name="colorControlNormal">
+         @color/white
+        </item>
+
+
+</style>
+    <style name="iosback">
+        <item name="android:homeAsUpIndicator">
+            @drawable/ic_arrow_back_ios_24
+        </item>
+
+
+    </style>
+
+
+</resources>
