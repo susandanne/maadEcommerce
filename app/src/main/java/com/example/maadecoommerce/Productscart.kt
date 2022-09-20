@@ -10,15 +10,23 @@ data class Productscart(
     val category: String,
     @ColumnInfo
     val description: String,
-    @PrimaryKey(autoGenerate = false)
+
+
     val id: Int,
     @ColumnInfo
     val image: String,
     @ColumnInfo
     val price: Double,
     @ColumnInfo
-    val title: String
-)
+    val title: String,
+    @ColumnInfo
+    val quantity:Int
+
+){  @PrimaryKey(autoGenerate = false)
+  var pid=id
+}
+
+
 
 
 

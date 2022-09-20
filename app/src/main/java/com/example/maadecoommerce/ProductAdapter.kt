@@ -22,12 +22,14 @@ class ProductAdapter(
         holder.productTitleTextView.text=productds.title
         holder.productCategoryTextView.text=productds.category
         holder.productPriceTextView.text="$"+productds.price
+
         Glide.with(context).load(productds.image).into(holder.productImageView)
-     holder.addToCartButton.setOnClickListener{
+
+         holder.addToCartButton.setOnClickListener{
 
          val carte:Productscart= Productscart(
         productds.category,productds.description,productds.id,productds.image,
-             productds.price,productds.title
+             productds.price,productds.title,1
          )
          cartaddlstener.cartadd(carte)
      }

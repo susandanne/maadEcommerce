@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/maadecoommerce/app/src/main/res/drawable-v24/ic_trash.xml" value="0.20092592592592592" />
         <entry key="..\:/maadecoommerce/app/src/main/res/drawable/ic_blush.xml" value="0.1125" />
         <entry key="..\:/maadecoommerce/app/src/main/res/drawable/ic_mascara.xml" value="0.1125" />
         <entry key="..\:/maadecoommerce/app/src/main/res/drawable/product_back.xml" value="0.1125" />
@@ -13,7 +14,9 @@
         <entry key="..\:/maadecoommerce/app/src/main/res/layout/fragment_category.xml" value="0.20416666666666666" />
         <entry key="..\:/maadecoommerce/app/src/main/res/layout/fragment_favorite.xml" value="0.20416666666666666" />
         <entry key="..\:/maadecoommerce/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/maadecoommerce/app/src/main/res/layout/ic_trash.xml" value="0.20416666666666666" />
         <entry key="..\:/maadecoommerce/app/src/main/res/layout/image_slider_layout_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/maadecoommerce/app/src/main/res/layout/item_cart.xml" value="0.20416666666666666" />
         <entry key="..\:/maadecoommerce/app/src/main/res/layout/item_product.xml" value="0.20416666666666666" />
         <entry key="..\:/maadecoommerce/app/src/main/res/layout/my_toolbar.xml" value="0.20416666666666666" />
         <entry key="..\:/maadecoommerce/app/src/main/res/layout/productsshow.xml" value="0.20416666666666666" />

@@ -5,23 +5,45 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.lifecycle.ViewModelProvider
+import com.example.maadecoommerce.databinding.FragmentCartBinding
+import kotlinx.coroutines.NonDisposableHandle.parent
 
 
+class CartFragment : Fragment(),CartListener {
 
-class CartFragment : Fragment() {
-
-
+    lateinit var binding:FragmentCartBinding
+    lateinit var cartViewModel:Cartviewmodel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
 
-        val view=inflater.inflate(R.layout.fragment_cart, container, false)
+         binding=FragmentCartBinding.inflate(inflater,container,false)
+
+        cartViewModel=ViewModelProvider(this)[Cartviewmodel::class.java]
+        cartViewModel.getallcart().observe(viewLifecycleOwner){
+            val adapter:CartAdapter= CartAdapter(requireActivity(),it,this)
+             binding.cartrcview.adapter=adapter
+
+        }
         // Inflate the layout for this fragment
 
 
-        return view
+        return binding.root
+    }
+
+    override fun cartAdd(cart: Productscart) {
+        TODO("Not yet implemented")
+    }
+
+    override fun cartMinus(cart: Productscart) {
+        TODO("Not yet implemented")
+    }
+
+    override fun cartDelete(cart: Productscart) {
+        TODO("Not yet implemented")
     }
 
 

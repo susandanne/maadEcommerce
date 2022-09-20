@@ -20,7 +20,7 @@ import retrofit2.Response
 
 class productActivity2 : AppCompatActivity(),cartaddlstener {
      lateinit var viewModel:Cartviewmodel
-     lateinit var texttoolbar:String
+
      var ctgname:String?=null
     lateinit var productsItem: List<ProductsItem>
     lateinit var binding:ActivityProduct2Binding
@@ -32,7 +32,9 @@ class productActivity2 : AppCompatActivity(),cartaddlstener {
         setContentView(binding.root)
         val toolbar2=findViewById<Toolbar>(R.id.toolbar2)
         setSupportActionBar(toolbar2)
+
      viewModel=ViewModelProvider(this)[Cartviewmodel::class.java]
+
 
 
         ctgname=intent.getStringExtra("name")
